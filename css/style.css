@@ -1,3 +1,60 @@
+:root {
+  --tamanyoFicha: 400px;
+}
+
 main {
     min-height: calc(100vh - 160px);
+    background-color: lightgray;
   }
+
+#contenedor {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.imagen {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.descDeFicha {
+  height: 50%;
+  margin: 10px;
+}
+
+.fichas {
+  height: var(--tamanyoFicha);
+  display: flex;
+  flex-direction: column;
+  border: 2px darkgray solid;
+  background-color: white;
+}
+
+.descripcion {
+  font-size: 16px;
+  overflow-y: scroll;
+  height: 60%;
+  margin-bottom: 0;
+}
+
+.titulo {
+  font-weight: bolder;
+  height: 25%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:pre-wrap;
+}
+
+.fechas {
+  margin-bottom: 0;
+}
