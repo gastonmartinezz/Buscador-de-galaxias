@@ -4,7 +4,7 @@
 
 main {
     min-height: calc(100vh - 160px);
-    background-color: lightgray;
+    background-color: #F8F9FA;
   }
 
 #contenedor {
@@ -34,27 +34,33 @@ img {
   height: var(--tamanyoFicha);
   display: flex;
   flex-direction: column;
-  border: 2px darkgray solid;
+  border: 2px #BDBDBD solid;
   background-color: white;
+  box-shadow: 0px 4px 8px #BDBDBD;
+  padding: 0;
 }
 
 .descripcion {
   font-size: 16px;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 60%;
   margin-bottom: 0;
+  font-size: .8rem;
 }
 
 .titulo {
   font-weight: bolder;
-  height: 25%;
-  font-size: 1.2rem;
+  height: auto;
+  font-size: 1rem;
   margin-bottom: 0;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space:pre-wrap;
+  width: 100%
 }
 
 .fechas {
   margin-bottom: 0;
+  margin-top: 5px;
+  font-size: .6rem;
+  color: darkgray;
 }
